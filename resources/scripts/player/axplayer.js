@@ -110,6 +110,10 @@ var iphoneXFirstPass = true;
             if (!QQ && !UC) appendOutOfDateNotification();
         }
 
+        if (CHROME_5_LOCAL && !$('body').attr('pluginDetected')) {
+            window.location = 'resources/chrome/chrome.html';
+        }
+
         if (FIREFOX && BROWSER_VERSION >= 68 && document.location.href.indexOf('file://') >= 0) { //detecting firefox and local
             window.location = 'resources/chrome/firefox.html';
         }

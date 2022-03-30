@@ -72,7 +72,7 @@ input[type=text]::-ms-clear {
 
 #mainPanel {
     background-color: #d8d8d8;
-    opacity: 1 !important; 
+    opacity: 0; 
     flex: 1;
     overflow: hidden;
 }
